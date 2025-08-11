@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@tailwind utilities;
+
+/* small global utility for glass cards */
+.glass-card {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.04);
+}

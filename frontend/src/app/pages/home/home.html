@@ -1,0 +1,86 @@
+
+
+<div class="min-h-screen bg-gradient-to-br from-[#0F172A] to-[#0B1220] text-[#F8FAFC] flex flex-col">
+  <main class="flex flex-1 p-6 overflow-hidden">
+    <!-- Chat Section -->
+    <section class="flex-1 flex flex-col bg-[#0B1220] rounded-xl p-6 mr-6 overflow-y-auto">
+      <h2 class="text-xl font-semibold mb-4">Describe Your Problem</h2>
+
+      <!-- Chat messages container -->
+      <div class="flex-1 overflow-y-auto space-y-4 mb-4">
+        <!-- AI message -->
+        <div class="flex gap-3">
+          <div
+            class="w-10 h-10 rounded-full bg-[#06B6D4] text-[#0F172A] flex items-center justify-center font-bold">
+            AI
+          </div>
+          <div class="bg-[#0F172A] p-3 rounded-lg max-w-lg">
+            <p class="text-sm">
+              Hi! Please tell me about your device issue or upload a photo/video.
+            </p>
+          </div>
+        </div>
+
+        <!-- User message example -->
+        <div class="flex justify-end">
+          <div class="bg-[#06B6D4] text-[#0F172A] p-3 rounded-lg max-w-lg">
+            <p class="text-sm">My laptop overheats after 20 minutes of gaming.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input area -->
+      <div class="flex items-center gap-3">
+        <input type="text" placeholder="Describe your problem..."
+          class="flex-1 px-4 py-2 rounded-full bg-transparent border border-white/20 placeholder-[#94A3B8] outline-none focus:border-[#06B6D4] transition" />
+        <label class="cursor-pointer">
+          <input type="file" class="hidden" />
+          <div
+            class="px-4 py-2 rounded-full bg-[#0B1220] border border-white/10 cursor-pointer hover:bg-[#1E2A42] transition">
+            📎
+          </div>
+        </label>
+        <button
+          class="px-4 py-2 rounded-full bg-[#06B6D4] text-[#0F172A] font-semibold hover:bg-[#FF6B6B] transition">
+          Send
+        </button>
+      </div>
+    </section>
+
+    <!-- Recommendations Panel -->
+    <aside
+      class="w-80 bg-white/5 backdrop-blur-lg rounded-xl p-6 overflow-y-auto flex flex-col space-y-6">
+      <h3 class="text-lg font-semibold mb-2">Recommendations</h3>
+
+      <!-- Parts -->
+      <div>
+        <p class="text-sm font-medium mb-1">Suggested Parts</p>
+        <ul class="text-sm text-[#94A3B8] space-y-1">
+          <li>• Replacement thermal paste — <span class="text-[#06B6D4]">₹350</span></li>
+          <li>• Laptop cooling pad — <span class="text-[#06B6D4]">₹1200</span></li>
+        </ul>
+      </div>
+
+      <!-- Videos -->
+      <div>
+        <p class="text-sm font-medium mb-1">Relevant Videos</p>
+        <div class="text-sm text-[#94A3B8] space-y-1">
+          <a href="#" class="block hover:underline">How to clean laptop fans</a>
+          <a href="#" class="block hover:underline">Replace thermal paste step-by-step</a>
+        </div>
+      </div>
+
+      <!-- Book Technician -->
+      <div class="p-4 rounded-lg bg-[#0F172A]">
+        <p class="text-sm font-medium mb-1">Need Help?</p>
+        <p class="text-xs text-[#94A3B8] mb-3">
+          Book a local technician if home repair isn't possible.
+        </p>
+        <button
+          class="w-full py-2 rounded-md bg-[#F59E0B] text-[#0F172A] font-semibold hover:bg-[#FF6B6B] transition">
+          Book Technician
+        </button>
+      </div>
+    </aside>
+  </main>
+</div>

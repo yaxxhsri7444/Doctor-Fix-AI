@@ -1,0 +1,89 @@
+<div class="min-h-screen bg-gradient-to-br from-[#0F172A] to-[#0B1220] text-[#F8FAFC] flex flex-col">
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-white/5 backdrop-blur-md">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl font-bold text-[#06B6D4]">🔧 AI Repair</span>
+      <span class="text-sm text-[#94A3B8]">Dashboard</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <button class="px-3 py-1 rounded-md bg-[#06B6D4] text-[#0F172A] hover:bg-[#FF6B6B] transition">New Issue</button>
+      <div class="w-10 h-10 rounded-full bg-[#06B6D4] flex items-center justify-center font-bold text-[#0F172A]">U</div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="flex flex-1 overflow-hidden">
+    <!-- Chat Section -->
+    <div class="flex-1 flex flex-col p-6 overflow-y-auto">
+      <div class="flex-1 space-y-4">
+        <!-- AI message -->
+        <div class="flex gap-3">
+          <div class="w-10 h-10 rounded-full bg-[#06B6D4] text-[#0F172A] flex items-center justify-center font-bold">AI</div>
+          <div class="bg-[#0B1220] p-3 rounded-lg max-w-lg">
+            <p class="text-sm">Hey! Describe your problem or upload an image/video, and I’ll diagnose it for you.</p>
+          </div>
+        </div>
+
+        <!-- User message example -->
+        <div class="flex justify-end">
+          <div class="bg-[#06B6D4] text-[#0F172A] p-3 rounded-lg max-w-lg">
+            <p class="text-sm">My fridge is leaking from the bottom.</p>
+          </div>
+        </div>
+
+        <!-- AI response -->
+        <div class="flex gap-3">
+          <div class="w-10 h-10 rounded-full bg-[#06B6D4] text-[#0F172A] flex items-center justify-center font-bold">AI</div>
+          <div class="bg-[#0B1220] p-3 rounded-lg max-w-lg">
+            <p class="text-sm">Likely cause: damaged gasket or blocked defrost drain. Want me to show step-by-step fix?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input -->
+      <div class="mt-4 flex items-center gap-3">
+        <input type="text" placeholder="Describe your problem..."
+               class="flex-1 px-4 py-2 rounded-full bg-transparent border border-white/20 placeholder-[#94A3B8] outline-none focus:border-[#06B6D4] transition"/>
+        <label class="cursor-pointer">
+          <input type="file" class="hidden"/>
+          <div class="px-4 py-2 rounded-full bg-[#0B1220] border border-white/10">📎</div>
+        </label>
+        <button class="px-4 py-2 rounded-full bg-[#06B6D4] text-[#0F172A] font-semibold hover:bg-[#FF6B6B] transition">
+          Send
+        </button>
+      </div>
+    </div>
+
+    <!-- Side Panel -->
+    <aside class="w-80 border-l border-white/10 p-6 bg-white/5 backdrop-blur-lg overflow-y-auto">
+      <h3 class="font-semibold mb-4">Recommendations</h3>
+
+      <!-- Parts -->
+      <div class="mb-6">
+        <p class="text-sm font-medium">Suggested Parts</p>
+        <ul class="mt-2 text-sm text-[#94A3B8] space-y-2">
+          <li>• Replacement gasket — <span class="text-[#06B6D4]">₹450</span></li>
+          <li>• Drain cleaner — <span class="text-[#06B6D4]">₹120</span></li>
+        </ul>
+      </div>
+
+      <!-- Videos -->
+      <div class="mb-6">
+        <p class="text-sm font-medium">Relevant Videos</p>
+        <div class="mt-2 text-sm text-[#94A3B8] space-y-1">
+          <a href="#" class="block hover:underline">Fix fridge leak — easy method</a>
+          <a href="#" class="block hover:underline">Replace fridge door gasket</a>
+        </div>
+      </div>
+
+      <!-- Book Technician -->
+      <div class="p-4 rounded-lg bg-[#0B1220]">
+        <p class="text-sm font-medium">Need help?</p>
+        <p class="text-xs text-[#94A3B8] mt-1">Book a local technician if home fix not possible.</p>
+        <button class="mt-3 w-full py-2 rounded-md bg-[#F59E0B] text-[#0F172A] font-semibold hover:bg-[#FF6B6B] transition">
+          Book Technician
+        </button>
+      </div>
+    </aside>
+  </div>
+</div>

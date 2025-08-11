@@ -1,0 +1,31 @@
+<header class="bg-[#0F172A] shadow-md px-6 py-4 flex items-center justify-between">
+  <!-- Logo -->
+  <div class="flex items-center space-x-3">
+    <span class="text-3xl font-extrabold text-[#06B6D4]">🔧 AI Repair</span>
+    <span class="text-[#94A3B8] text-sm hidden sm:inline">Your AI technician online</span>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="hidden md:flex space-x-8 text-[#F8FAFC] font-semibold">
+    <a routerLink="/home" routerLinkActive="text-[#FF6B6B]" class="hover:text-[#FF6B6B] transition">Home</a>
+    <a routerLink="/profile" routerLinkActive="text-[#FF6B6B]" class="hover:text-[#FF6B6B] transition">Profile</a>
+    <a routerLink="/login" routerLinkActive="text-[#FF6B6B]" class="hover:text-[#FF6B6B] transition">Logout</a>
+  </nav>
+
+  <!-- Mobile menu button -->
+  <button class="md:hidden text-[#06B6D4] focus:outline-none" (click)="toggleMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path *ngIf="!menuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16" />
+      <path *ngIf="menuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+</header>
+
+<!-- Mobile menu -->
+<nav *ngIf="menuOpen" class="md:hidden bg-[#0B1220] px-6 py-4 space-y-3 text-[#F8FAFC] font-semibold">
+  <a routerLink="/home" routerLinkActive="text-[#FF6B6B]" class="block hover:text-[#FF6B6B] transition">Home</a>
+  <a routerLink="/profile" routerLinkActive="text-[#FF6B6B]" class="block hover:text-[#FF6B6B] transition">Profile</a>
+  <a routerLink="/login" routerLinkActive="text-[#FF6B6B]" class="block hover:text-[#FF6B6B] transition">Logout</a>
+</nav>
